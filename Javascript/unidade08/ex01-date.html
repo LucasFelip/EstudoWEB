@@ -2,8 +2,13 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
-
+            var meses = ["Janeiro", "Fevereiro", "Marco", "Abril", "Maio", "Junho", 
+                         "Julho", "Agosto", "Septembro", "Outubro", "Novembro", "Dezembro"];
+            var agr = new Date();
+            console.log(agr.getDate() + "/" + meses[agr.getMouth()] + "/" + agr.getFullYear()); //primeiro pega o dia, dps o mês(mapeada em vetor: 0 - 11) e dps o ano do presente momento
             
+            var aniversario = new Date(2000,6,9); 
+            console.log(aniversario.getDay()); //ajuda a pegar o dia da semana (ex: 1 = segunda-feira)
         </script>
     </head>
     <body>
