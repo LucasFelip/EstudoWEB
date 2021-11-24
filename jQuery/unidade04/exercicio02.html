@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Fundamental</title>
+
+        <style>
+            body{ 
+                font-family:Arial, Helvetica, sans-serif;
+                font-size:0.9em; 
+            }
+			ul{ 
+                margin:0; 
+                padding:0;
+                list-style:none 
+            }
+			li{ display:block;
+                margin-right:10px 
+            }
+		</style>
+        
+        <script src="jquery-3.2.1.min.js"></script>
+        <script>
+			$( function(e) {
+                $("h1").html("Formação para desenvolvimento Web"); // add titulo    
+                $("ul#listacursos").append("<li>Curso Bootstrap Fundamental</li>") //add no final
+                $("ul#listacursos").prepend("<li>Curso Bootstrap Fundamental</li>") //add no começo
+			} )
+		</script>
+        
+    </head>
+
+    <body>
+    	<h1></h1>
+    
+		<ul id="listacursos">
+            <li>Curso HTML5 Essencial</li>
+            <li>Curso CSS3 Essencial</li>
+            <li>Curso Javascript Essencial</li>
+            <li>Curso jQuery Fundamental</li>
+        </ul>
+
+    </body>
+
+</html>
