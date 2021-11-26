@@ -1,0 +1,7 @@
+h3{
+  color:aqua; // funciona apenas na tag h3
+}
+
+.h3{
+  color:bisque //funciona apenas em class h3
+}
